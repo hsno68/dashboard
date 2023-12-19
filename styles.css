@@ -26,12 +26,15 @@ a {
   text-decoration: none;
 }
 
+a:link,
 a:visited {
   color: inherit;
 }
 
 .header {
+  display: grid;
   padding: 25px 50px;
+  gap: 1rem;
 }
 
 .header-top {
@@ -114,10 +117,56 @@ label[for="search-bar"] {
   background-color: var(--main-border-contrast);
 }
 
+.profile-username {
+  font-weight: bold;
+}
+
 .profile-icon {
   border-radius: 50%;
 }
 
 .header-top .profile-icon {
   width: 50px;
+}
+
+.header-bot .profile-icon {
+  width: 100px;
+}
+
+.header-bot {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: max-content repeat(2, 1fr);
+  gap: 1rem 1.5rem;
+}
+
+.header-bot a[aria-label="Profile Icon"],
+.header-bot .links-container {
+  grid-row: 1 / 3;
+}
+
+.header-bot p:nth-of-type(1) {
+  align-self: end;
+}
+
+.header-bot .links-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  justify-self: end;
+  align-self: center;
+  gap: 1rem;
+}
+
+.header-bot .links-container a {
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--main-border-contrast);
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.header-bot .links-container a:hover {
+  background-color: var(--main-border-color)
 }
