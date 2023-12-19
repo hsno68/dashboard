@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/*General styles*/
 :root {
   --main-text-color: #f1f1f1;
   --main-background-color: #0f0f0f;
@@ -31,6 +32,7 @@ a:visited {
   color: inherit;
 }
 
+/*Header styles START*/
 .header {
   display: grid;
   padding: 25px 50px;
@@ -170,3 +172,4 @@ label[for="search-bar"] {
 .header-bot .links-container a:hover {
   background-color: var(--main-border-color)
 }
+/*Header styles END*/
