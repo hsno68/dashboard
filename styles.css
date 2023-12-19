@@ -53,6 +53,7 @@ a:visited {
   display: flex;
   max-width: 50%;
   position: relative;
+  margin-right: 1rem;
 }
 
 .header-top .profile-container {
@@ -126,16 +127,27 @@ label[for="search-bar"] {
   font-weight: bold;
 }
 
-.profile-icon {
+.profile-icon-container {
   border-radius: 50%;
+  overflow: hidden;
 }
 
-.header-top .profile-icon {
+.header-top .profile-icon-container {
   width: 50px;
 }
 
-.header-bot .profile-icon {
+.header-bot .profile-icon-container {
   width: 100px;
+}
+
+.profile-icon {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
 }
 
 .header-bot {
