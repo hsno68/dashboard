@@ -21,6 +21,9 @@ body {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   color: var(--main-text-color);
   background-color: var(--main-background-color);
+  display: grid;
+  grid-template-columns: minmax(300px, 500px) 1fr;
+  grid-template-rows: max-content 1fr;
 }
 
 a {
@@ -173,3 +176,12 @@ label[for="search-bar"] {
   background-color: var(--main-border-color)
 }
 /*Header styles END*/
+
+.sidebar {
+  grid-row: 1 / 3;
+  border: 1px solid red;
+}
+
+.content {
+  border: 1px solid red;
+}
