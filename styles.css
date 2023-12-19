@@ -5,3 +5,119 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --main-text-color: #f1f1f1;
+  --main-background-color: #0f0f0f;
+  --main-background-contrast: #121212;
+  --main-border-color: #303030;
+  --main-border-contrast: #222222;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.header {
+  padding: 25px 50px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top .search-container {
+  flex: 1;
+  display: flex;
+  max-width: 50%;
+  position: relative;
+}
+
+.header-top .profile-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+label[for="search-bar"] {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  left: -10000px;
+  top: auto;
+}
+
+.search-bar,
+.search-icon {
+  color: inherit;
+  border: 1px solid var(--main-border-color);
+}
+
+.search-bar {
+  flex: 1;
+  font-size: 1rem;
+  background-color: var(--main-background-contrast);
+  padding: 12px 24px;
+  border-radius: 20px 0 0 20px;
+  appearance: none;
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: rgb(62, 166, 255);
+  box-shadow: 0px 0px 5px 0px rgba(62, 166, 255, 0.5);
+}
+
+.search-icon {
+  background-color: var(--main-border-contrast);
+  padding: 0px 1rem;
+  border-radius: 0 20px 20px 0;
+  border-left: none;
+  cursor: pointer;
+}
+
+.search-icon::before {
+  content: "search";
+}
+
+.upload-icon::before {
+  content: "video_call";
+}
+
+.notification-icon::before {
+  content: "notifications";
+}
+
+.upload-icon,
+.notification-icon {
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.upload-icon:hover,
+.notification-icon:hover {
+  background-color: var(--main-border-contrast);
+}
+
+.profile-icon {
+  border-radius: 50%;
+}
+
+.header-top .profile-icon {
+  width: 50px;
+}
