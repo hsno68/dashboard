@@ -154,6 +154,11 @@ label[for="search-bar"] {
   align-self: end;
 }
 
+.header-bot p:nth-of-type(2) a:hover {
+  border-bottom: 1px solid var(--main-text-color);
+  padding-bottom: 1px;
+}
+
 .header-bot .links-container {
   display: grid;
   grid-auto-flow: column;
