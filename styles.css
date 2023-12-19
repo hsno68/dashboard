@@ -157,7 +157,7 @@ label[for="search-bar"] {
   gap: 1rem 1.5rem;
 }
 
-.header-bot a[aria-label="Profile Icon"],
+.header-bot .profile-icon-container,
 .header-bot .links-container {
   grid-row: 1 / 3;
 }
