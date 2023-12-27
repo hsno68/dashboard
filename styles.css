@@ -200,9 +200,15 @@ label[for="search-bar"] {
   border: 1px solid red;
 }
 
+.sidebar-header,
 .sidebar li {
   display: flex;
   align-items: center;
+}
+
+.sidebar-header img {
+  width: 50px;
+  height: auto;
 }
 /*Sidebar styles END*/
 
