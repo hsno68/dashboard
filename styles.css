@@ -298,6 +298,7 @@ label[for="search-bar"] {
 }
 
 .sidebar:hover {
+  mask-position: left top;
   -webkit-mask-position: left top;
 }
 
