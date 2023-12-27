@@ -283,6 +283,24 @@ label[for="search-bar"] {
   color: #717171;
 }
 
+/*Scrollbar styling*/
+.sidebar {
+  mask-image:
+    linear-gradient(to top, transparent, var(--main-background-color)),
+    linear-gradient(to left, transparent 8px, var(--main-background-color) 8px);
+  mask-size: 100% 100000px;
+  mask-position: left bottom;
+  -webkit-mask-image:
+    linear-gradient(to top, transparent, var(--main-background-color)),
+    linear-gradient(to left, transparent 8px, var(--main-background-color) 8px);
+  -webkit-mask-size: 100% 100000px;
+  -webkit-mask-position: left bottom;
+}
+
+.sidebar:hover {
+  -webkit-mask-position: left top;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
