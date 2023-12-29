@@ -220,6 +220,10 @@ label[for="search-bar"] {
   top: 0;
 }
 
+.sidebar-header:hover {
+  cursor: pointer;
+}
+
 .sidebar-header button {
   color: inherit;
   background-color: var(--main-background-color);
@@ -229,6 +233,7 @@ label[for="search-bar"] {
 }
 
 .sidebar-header button:hover {
+  cursor: pointer;
   background-color: var(--main-border-contrast);
 }
 
@@ -380,6 +385,10 @@ label[for="search-bar"] {
   border-radius: 5px;
   opacity: 0.8;
   visibility: hidden;
+}
+
+.icons span:hover {
+  cursor: pointer;
 }
 
 article:hover > .icons > span {
