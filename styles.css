@@ -355,6 +355,7 @@ label[for="search-bar"] {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin: 5px 0px;
 }
 
 .articles-container p {
