@@ -9,6 +9,7 @@
 /*General styles*/
 :root {
   --main-text-color: #f1f1f1;
+  --main-text-contrast: #717171;
   --main-background-color: #0f0f0f;
   --main-background-contrast: #121212;
   --main-border-color: #303030;
@@ -271,7 +272,7 @@ label[for="search-bar"] {
 
 .sidebar-footer div:last-child {
   font-size: 12px;
-  color: #717171;
+  color: var(--main-text-contrast);
 }
 
 .sidebar-footer ul {
@@ -358,7 +359,8 @@ label[for="search-bar"] {
   margin: 5px 0px;
 }
 
-.articles-container p {
-  font-size: 14px;
+.articles-container div {
+  font-size: 12px;
+  color: var(--main-text-contrast);
 }
 /*Content styles END*/
