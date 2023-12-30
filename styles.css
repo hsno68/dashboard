@@ -126,8 +126,11 @@ label[for="search-bar"] {
 }
 
 .profile-username {
-  font-size: 1.5rem;
   font-weight: bold;
+}
+
+.header-bot .profile-username {
+  font-size: 1.5rem;
 }
 
 .profile-icon-container {
