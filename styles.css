@@ -176,7 +176,7 @@ label[for="search-bar"] {
 
 .header-bot p:nth-of-type(2) a:hover {
   border-bottom: 1px solid var(--main-text-color);
-  padding-bottom: 1px;
+  padding: 1px 0px;
 }
 
 .header-bot .links-container {
